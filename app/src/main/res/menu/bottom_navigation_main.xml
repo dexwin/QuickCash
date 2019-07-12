@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:enabled="true"
+        android:icon="@drawable/search_icon_24x24"
+        android:title="Search"
+        android:checkable="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_food"
+        android:enabled="true"
+        android:icon="@drawable/food_icon_24x24"
+        android:title="Food"
+        android:checkable="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_drinks"
+        android:enabled="true"
+        android:icon="@drawable/drink_icon_24x24"
+        android:title="Drinks"
+        android:checkable="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_desert"
+        android:enabled="true"
+        android:icon="@drawable/desert_icon_48x48"
+        android:title="Desert"
+        android:checkable="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_dynamic_product"
+        android:enabled="true"
+        android:icon="@drawable/dynamic_products_24x24"
+        android:title="D-Product"
+        android:checkable="true"
+        app:showAsAction="ifRoom" />
+</menu>

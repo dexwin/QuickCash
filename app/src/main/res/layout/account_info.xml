@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@android:color/background_light"
+    android:paddingBottom="8dp"
+    android:paddingTop="24dp">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/quickcash_logo_512x512"
+      />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="V1.0.112"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Current Subscription"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+         />
+
+
+    <TextView
+        android:id="@+id/tvAccountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Kata Lounge"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/tvCurrentSubscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Free"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+         />
+
+
+    <Button
+        android:id="@+id/btnUpgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/sales_btn_day_background"
+        android:text="Close"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Copyright All rights reserved"
+        android:textColor="#7b7b7b"
+       />
+
+</LinearLayout>

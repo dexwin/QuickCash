@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Quickcash</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_home"></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout" translatable="false">Logout</string>
+    <string name="action_reload_products">Reload Products</string>
+    <string name="action_connect_bt_printer">Connect BT Printer</string>
+    <string name="action_disconnect_bt_printer">Disconnect BT Printer</string>
+    <string name="title_activity_stock">StockActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_sales">SalesActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_products">ProductsActivity</string>
+
+    <string-array name="product_index_array">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+
+    <string-array name="sales_search_category">
+        <item>Product</item>
+        <item>Waiter</item>
+        <item>Category</item>
+    </string-array>
+
+    <string-array name="stock_search_category">
+        <item>Product</item>
+        <item>Category</item>
+    </string-array>
+
+    <string-array name="account_type">
+        <item>Sales</item>
+        <item>Manager</item>
+    </string-array>
+
+    <string-array name="category_list">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Dessert</item>
+        <item>D-Products</item>
+    </string-array>
+    <string name="title_activity_users">UsersActivity</string>
+</resources>

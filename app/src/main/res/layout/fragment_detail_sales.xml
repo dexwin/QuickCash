@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp"
+    android:paddingTop="20dp">
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:context=".SummaryStockFragment">
+
+
+        <Button
+            android:id="@+id/btnDay"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/sales_btn_day_background"
+            android:text="day"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#295305"
+            app:layout_constraintEnd_toStartOf="@+id/btnWeek"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnWeek" />
+
+        <Button
+            android:id="@+id/btnWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/sales_btn_week_background"
+            android:text="week"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#864d09"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/sales_btn_month_background"
+            android:text="month"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#084252"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnWeek"
+            app:layout_constraintTop_toTopOf="@+id/btnWeek" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#cecece"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnWeek">
+
+            <TextView
+                android:id="@+id/tvDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                android:text="day"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#414141"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginTop="8dp"
+                android:text="total sales (ghc)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#414141"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/etSearchProduct"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="search by product"
+            android:inputType="textPersonName"
+            android:paddingBottom="15dp"
+            android:paddingLeft="14dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/searchCategorySpinner"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_search_48x48"
+            app:layout_constraintBottom_toBottomOf="@+id/etSearchProduct"
+            app:layout_constraintEnd_toEndOf="@+id/etSearchProduct"
+            app:layout_constraintTop_toTopOf="@+id/etSearchProduct"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Spinner
+            android:id="@+id/searchCategorySpinner"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etSearchProduct"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/etSearchProduct" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sales_btn_week_background"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:text="September 2018" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_calender_36x36"
+            app:backgroundTint="#8e2d8d" />
+
+    </LinearLayout>
+</FrameLayout>
+

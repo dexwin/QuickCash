@@ -1,0 +1,8 @@
+{"saleInfo":
+    {"personnelId":"QU7pFmNpmic42F9Glyhf33BPfju1","personnelName":"Christian Baily","saleId":"-1","timeSold":1543448083110,"totCost":531.0,"totalDiscount":0.0},
+  "saleItems":[
+      {"availableQuantity":0,"cost":25.0,"isTotProduct":true,"itemName":"Gringo Gin","productId":"-LR0_wpjUc0FOpcTGjXA","quantitySold":1,"saleId":"-1","timeSold":1543448083110,"totalDiscount":0.0},
+      {"availableQuantity":0,"cost":1.5,"isTotProduct":false,"itemName":"Pepsi","productId":"-LQFaIhGrr_A9doXS-ai","quantitySold":4,"saleId":"-1","timeSold":1543448083110,"totalDiscount":0.0},
+    {"availableQuantity":0,"cost":100.0,"isTotProduct":false,"itemName":"Vanilla","productId":"-LQxyHCvNTqCeJnL99rg","quantitySold":5,"saleId":"-1","timeSold":1543448083110,"totalDiscount":0.0}],
+  "senderDetails":{"AccountId":"-LMNmcP0k4cV0geBWL8Q","personnelId":"QU7pFmNpmic42F9Glyhf33BPfju1","personnelName":"Christian Baily","timeSent":"Nov 28, 2018 11:34:43 PM"}
+}

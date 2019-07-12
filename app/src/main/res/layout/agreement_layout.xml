@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#E6000000"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="Agreement"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CC000000"
+            android:fillViewport="true"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae debitis architecto totam porro quasi fugiat consectetur ducimus explicabo numquam similique placeat deleniti unde quas, natus, illo temporibus maiores pariatur perferendis earum culpa voluptatum nulla. Reprehenderit voluptas quos nihil et maxime porro rem quaerat doloremque nulla quo consequuntur corrupti sapiente possimus cupiditate, asperiores, eaque labore quis provident? Iste, laudantium hic? Nesciunt doloremque, maxime fugiat, inventore enim esse repellat praesentium tempora modi delectus sed mollitia voluptatem dolorum officiis molestiae voluptatum ipsa voluptatibus veniam quo! Consectetur accusamus id voluptates blanditiis laborum, recusandae dolore impedit sapiente ut quam ullam assumenda doloribus qui sint molestiae eaque beatae excepturi quasi expedita distinctio non mollitia? Ex nesciunt adipisci reiciendis libero est iusto accusamus. Ipsa dolor officia dignissimos architecto eveniet incidunt earum neque quibusdam voluptas accusamus, ullam, quod in consequuntur natus explicabo reiciendis sequi atque? Non, nesciunt! Id iure veritatis porro laborum, recusandae maiores facere quaerat? Veniam eos aliquid cumque nobis fuga dignissimos modi quo et autem corrupti omnis animi, laborum, ut officiis tempore veritatis saepe provident dicta inventore tenetur, corporis voluptatem ipsam? Quibusdam iste cum at aut! Natus quaerat repellat ipsum. Nulla officia veniam asperiores doloribus accusantium architecto in, tempore, atque, unde ut dolor assumenda consequatur ea eaque ipsam! Soluta mollitia rem sapiente architecto. Vel sequi, provident cum, ut assumenda eaque distinctio natus commodi adipisci quae dolor, dolorem omnis non quos alias nisi sunt illo rerum tempora voluptatibus! Sed assumenda quos, eius aspernatur enim obcaecati non ad adipisci et, deleniti ab quaerat consequatur suscipit magni minima corrupti cum placeat velit veritatis saepe! Blanditiis eos quia ipsa quos mollitia ad sequi voluptatibus modi optio neque porro, numquam ipsum maxime necessitatibus eaque. Quasi consectetur quos quo voluptatum sint similique dolorem consequatur illo velit mollitia? Dolores illum quas omnis, dolorem labore ea odio in unde quisquam rerum nobis repudiandae? Minima?"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#E6000000"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:text="Accept"
+            android:textColor="@android:color/holo_blue_light" />
+    </LinearLayout>
+
+</LinearLayout>

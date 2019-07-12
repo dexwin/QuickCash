@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/linear_layout_divider"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/material_text_input_background"
+                android:padding="8dp">
+
+                <Spinner
+                    android:id="@+id/spProductCategory"
+                    style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/product_name_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/material_text_input_background"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <EditText
+                    android:id="@+id/etProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Product Name"
+                    android:inputType="text|textCapWords"
+                    android:padding="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/product_quantity_text_input_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/material_text_input_background"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/etProductQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="Quantity"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/product_price_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/material_text_input_background"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/etProductPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="Price"
+                        android:inputType="numberDecimal"
+                        android:padding="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <Switch
+                android:id="@+id/swPartSalesAvailable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/serving_switch_background"
+                android:padding="12dp"
+                android:text="Serving Available"
+                android:theme="@style/SCBSwitch"
+                android:textColor="@android:color/background_light" />
+
+
+            <LinearLayout
+                android:id="@+id/partSalesLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/part_sales_product_name_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/material_text_input_background"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:id="@+id/etPartSalesProductName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="Serving Name"
+                        android:inputType="textCapWords"
+                        android:padding="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/part_sales_price_text_input_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/material_text_input_background"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <EditText
+                            android:id="@+id/etPartSalesPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:hint="Price"
+                            android:inputType="numberDecimal"
+                            android:padding="8dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/part_sales_qtyperbottle_text_input_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/material_text_input_background"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <EditText
+                            android:id="@+id/etQuantityPerBottle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:hint="Servings / Bottle"
+                            android:inputType="numberDecimal"
+                            android:padding="8dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddProduct"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sales_btn_month_background"
+                android:text="Add Product"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

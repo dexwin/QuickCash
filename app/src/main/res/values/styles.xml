@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>-->
+    </style>
+
+    <style name="ProfileSetupTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#ffff</item>
+        <item name="colorPrimaryDark">#ffff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/toggleStateSelected</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/toggleStateDeselected</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <!--<style name="AppBottomSheetDialogTheme"-->
+    <!--parent="Theme.Design.Light.BottomSheetDialog">-->
+    <!--<item name="bottomSheetStyle">@style/AppModalStyle</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppModalStyle"-->
+    <!--parent="Widget.Design.BottomSheet.Modal">-->
+    <!--<item name="behavior_peekHeight">@dimen/custom_peek_height</item>-->
+    <!--</style>-->
+
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    tools:context=".ProfileSetupActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back_icon_48x48" />
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:text="MY BUSINESS PROFILE"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgProfileImage"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/user_avatar_copy_128x128"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_width="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfileImage"
+        app:layout_constraintEnd_toEndOf="@+id/imgProfileImage"
+        app:srcCompat="@drawable/camera_icon_36x36" />
+
+    <TextView
+        android:id="@+id/txtUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="default@mail.com"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/imgProfileImage"
+        app:layout_constraintStart_toStartOf="@+id/imgProfileImage"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfileImage" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="sans-serif"
+        android:hint="username"
+        android:inputType="textEmailAddress"
+        android:paddingTop="0dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserEmail" />
+
+    <EditText
+        android:id="@+id/txtNewPin"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="sans-serif"
+        android:hint="pin"
+        android:inputType="numberPassword"
+        android:paddingTop="0dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserEmail" />
+
+    <ImageView
+        android:id="@+id/imgEditUsername"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtUsername"
+        app:layout_constraintEnd_toEndOf="@+id/txtUsername"
+        app:srcCompat="@drawable/edit_icon_24x24" />
+
+    <ImageView
+        android:id="@+id/imgEditPassword"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNewPin"
+        app:layout_constraintEnd_toEndOf="@+id/txtNewPin"
+        app:srcCompat="@drawable/edit_icon_24x24" />
+
+    <ImageView
+        android:id="@+id/imgVisible"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNewPin"
+        app:layout_constraintEnd_toStartOf="@+id/imgEditPassword"
+        app:srcCompat="@drawable/visible_icon_24x24" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/sales_btn_month_background"
+        android:text="Continue"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewPin" />
+
+    <Button
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/upgrade_free_background"
+        android:text="Update Profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContinue" />
+
+
+</android.support.constraint.ConstraintLayout>

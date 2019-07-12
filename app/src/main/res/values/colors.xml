@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1b1b1b</color>
+    <color name="colorPrimaryDark">#181818</color>
+    <color name="colorAccent">#2c7e96</color>
+    <color name="fragmentColor">#2c7e96</color>
+    <color name="btnColor">#ffff</color>
+    <color name="costColor">#41bea3</color>
+    <color name="toggleStateSelected">#46e6c6</color>
+    <color name="toggleStateDeselected">#a1a1a1</color>
+</resources>

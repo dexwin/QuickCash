@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="3dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ProductsActivity"
+    tools:showIn="@layout/activity_products">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/passwordLayout"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39999998">
+
+        <TextView
+            android:id="@+id/txtTableName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Product"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:layout_marginTop="8dp"
+            android:text="Price"
+            android:textColor="#41bea3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Qty"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTableName"></LinearLayout>
+
+        <ListView
+            android:id="@+id/productsListView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="45dp"
+        android:layout_height="160dp"
+        android:background="@color/colorPrimary"
+        android:gravity="right|center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+
+        <ImageView
+            android:id="@+id/imgBtnServe"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            app:srcCompat="@drawable/serve_icon_45x45" />
+
+        <ImageView
+            android:id="@+id/imgQuickCheckout"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:background="#35b793"
+            app:srcCompat="@drawable/checkout_icon_45x45" />
+
+        <ImageView
+            android:id="@+id/imgClearList"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="#f05228"
+            app:srcCompat="@drawable/cancel_icon_45x45" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/search_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/search_28x28"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Search"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/category_bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout">
+
+        <ListView
+            android:id="@+id/list_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp" />
+
+        <LinearLayout
+            android:id="@+id/side_index"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/category_bottom_navigation"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center|start"
+            android:textColor="@android:color/background_light"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@color/bottom_bar_colors"
+            app:itemTextColor="@color/bottom_bar_colors"
+            app:menu="@menu/bottom_navigation_main" />
+
+
+</android.support.constraint.ConstraintLayout>

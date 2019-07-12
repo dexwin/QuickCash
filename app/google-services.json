@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1026833840767",
+    "firebase_url": "https://quick-cash-32ecf.firebaseio.com",
+    "project_id": "quick-cash-32ecf",
+    "storage_bucket": "quick-cash-32ecf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026833840767:android:3e78a4887b5d2502",
+        "android_client_info": {
+          "package_name": "com.acesdatasystems.quickcash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026833840767-fqf0cobrvh3jn57drnr6hd7di952olsu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.acesdatasystems.quickcash",
+            "certificate_hash": "741b586ac0ccecedbde151a20f44ca3980995c50"
+          }
+        },
+        {
+          "client_id": "1026833840767-5q1me2v6114alc94l6puqj84e1lslae2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDeTtbd6At2AR_7Uxzbc2UNqX_4d6sfwE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026833840767-5q1me2v6114alc94l6puqj84e1lslae2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
