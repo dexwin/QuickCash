@@ -1,5 +1,8 @@
 package com.acesdatasystems.quickcash;
 
+/*
+GENERAL IMPORTS
+ */
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;

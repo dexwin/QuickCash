@@ -1,5 +1,8 @@
 package com.acesdatasystems.quickcash;
 
+/*
+GENERAL IMPORTS
+ */
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -32,6 +35,9 @@ import java.util.ArrayList;
 
 public class UsersActivity extends BaseActivity implements UserListener{
 
+    /*
+    variable declarations
+     */
     ImageView imgUsersBack;
     LinearLayout userHolderList;
     ArrayList<AccountUser> userArrayList;
@@ -47,6 +53,9 @@ public class UsersActivity extends BaseActivity implements UserListener{
         AccountUser.setUserListener(this);
 
         // load all R fields
+         /*
+        sets xml layout control to java controls
+         */
         imgUsersBack = findViewById(R.id.imgUsersBack);
         userHolderList = findViewById(R.id.userHolderList);
         imgAddUser = findViewById(R.id.imgAddUser);
@@ -63,6 +72,9 @@ public class UsersActivity extends BaseActivity implements UserListener{
                 builder.setView(viewInflated);
                 final AlertDialog alertDialog = builder.create();
 
+                 /*
+                sets xml layout control to java controls
+                */
                 final EditText etName = viewInflated.findViewById(R.id.etName);
                 final EditText etEmail = viewInflated.findViewById(R.id.etEmail);
                 final EditText etPin = viewInflated.findViewById(R.id.etPin);

@@ -1,5 +1,8 @@
 package com.acesdatasystems.quickcash;
 
+/*
+GENERAL IMPORTS
+ */
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,10 +15,17 @@ public class UpgradeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        /*
+        sets xml layout control to java controls
+         */
         setContentView(R.layout.activity_upgrade);
         FloatingActionButton upgradeBasic = findViewById(R.id.fabUpgradeBasic);
         FloatingActionButton upgradePro = findViewById(R.id.upgradePro);
 
+        /*
+        sets onclick listener for upgrading to basic
+         */
         upgradeBasic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,7 +35,9 @@ public class UpgradeActivity extends AppCompatActivity {
                 builder.show();
             }
         });
-
+        /*
+        sets onclick listener for upgrading to pro
+         */
         upgradePro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

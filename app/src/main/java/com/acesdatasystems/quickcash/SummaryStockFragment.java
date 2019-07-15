@@ -1,5 +1,8 @@
 package com.acesdatasystems.quickcash;
 
+/*
+GENERAL IMPORTS
+ */
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -56,6 +59,10 @@ public class SummaryStockFragment extends Fragment implements AdapterView.OnItem
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_summary_stock, container, false);
+
+         /*
+        sets xml layout control to java controls
+         */
          stockCategorySpinner = rootView.findViewById(R.id.stockCategorySpinner);
          etSearchStock = rootView.findViewById(R.id.etSearchStock);
          stockItemsHolder = rootView.findViewById(R.id.stockItemsHolder);
