@@ -2,6 +2,7 @@ package com.acesdatasystems.quickcash.datasource;
 
 /**
  * Created by Sheriff on 25-Sep-18.
+ * TotProduct Model
  */
 
 public class TotProduct extends TableItem{
@@ -15,9 +16,9 @@ public class TotProduct extends TableItem{
 
     boolean isTapped = false;
 
-
-    public TotProduct() {
-    }
+    /*
+    constructor to create object and initialize TotProduct
+     */
     public TotProduct(String name, double price) {
         this.productName = name;
         this.price = price;
@@ -30,6 +31,11 @@ public class TotProduct extends TableItem{
         this.totsPerBottle = totsPerBottle;
 
     }
+
+    /*
+    Setters and Getters
+     */
+
     @Override
     public String getProductName() {
         return productName;

@@ -1,5 +1,8 @@
 package com.acesdatasystems.quickcash.model;
 
+/*
+GENERAL IMPORTS
+ */
 import android.util.Log;
 
 import com.acesdatasystems.quickcash.datasource.*;

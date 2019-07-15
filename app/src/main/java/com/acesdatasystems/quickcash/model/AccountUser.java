@@ -1,5 +1,8 @@
 package com.acesdatasystems.quickcash.model;
 
+/*
+GENERAL IMPORTS
+ */
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -22,7 +25,9 @@ import java.util.List;
 
 public class AccountUser extends  ShortAccountInfo{
 
-
+    /*
+    Initialization of variables
+     */
 
     private String name = "";
     private String email = "";
@@ -47,6 +52,9 @@ public class AccountUser extends  ShortAccountInfo{
 
     private static List<AccountUser> accountUserList = new ArrayList<>();
 
+    /*
+    Constructor to create and  initialize AccountUser object
+     */
     public AccountUser(String name, String email, String userId, String password, String status, String restaurant, String imgUrl, String phoneNumber, String accountType, boolean setupStatus, boolean online) {
 
         super( name,  userId,  accountType,  online,  status);
@@ -61,6 +69,9 @@ public class AccountUser extends  ShortAccountInfo{
         this.setupStatus = setupStatus;
         this.online = online;
     }
+    /*
+    Overloaded Constructor
+     */
     public AccountUser(){}
     public AccountUser(ShortAccountInfo shortAccountInfo){
         super(shortAccountInfo.name,shortAccountInfo.getUserId(),shortAccountInfo.accountType,shortAccountInfo.online,shortAccountInfo.getStatus());
@@ -71,6 +82,9 @@ public class AccountUser extends  ShortAccountInfo{
         this.status = shortAccountInfo.status;
 
     }
+    /*
+    Overloaded Constructor
+     */
 
     public AccountUser (Context context, String userFullName, boolean isOnline, boolean isBlockUser){
         this.name = userFullName;
@@ -94,7 +108,9 @@ public class AccountUser extends  ShortAccountInfo{
                 }
             }
         });
-
+        /*
+        Check user availability ie. Online / Offline
+         */
         if(isOnline){
             swBlockUser.setChecked(true);
             txtUserStatus.setText("ONLINE");
@@ -118,6 +134,9 @@ public class AccountUser extends  ShortAccountInfo{
         });
         positionCount ++;
     }
+    /*
+    Overloaded Constructor
+     */
     public AccountUser (Context context, final AccountUser user){
 
         super(user.name,  user.userId,  user.accountType, user.online,  user.status);
@@ -200,6 +219,9 @@ public class AccountUser extends  ShortAccountInfo{
         this.getRootView().setTag(this);
         positionCount ++;
     }
+    /*
+    Getters and Setters
+     */
 
     public String getName() {
         return name;

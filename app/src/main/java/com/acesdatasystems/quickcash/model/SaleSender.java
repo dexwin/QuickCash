@@ -1,5 +1,8 @@
 package com.acesdatasystems.quickcash.model;
 
+/*
+GENERAL IMPORTS
+ */
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.Date;
@@ -10,14 +13,23 @@ import java.util.Locale;
  */
 
 public class SaleSender {
+    /*
+    Variables declarations
+     */
     String personnelName;
     String personnelId;
     String AccountId;
     Date timeSent;
 
+    /*
+    Default Constructor
+     */
     public SaleSender() {
     }
 
+    /*
+    Constructor to create and initialize the SaleSender Object
+     */
     public SaleSender(String personnelName, String personnelId, String accountId) {
         this.personnelName = personnelName;
         this.personnelId = personnelId;
@@ -25,6 +37,9 @@ public class SaleSender {
         this.timeSent = new Date(System.currentTimeMillis());
     }
 
+    /*
+    Getters and Setters
+     */
     public String getPersonnelName() {
         return personnelName;
     }

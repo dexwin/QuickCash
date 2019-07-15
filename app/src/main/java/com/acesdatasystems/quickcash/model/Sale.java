@@ -1,6 +1,8 @@
 package com.acesdatasystems.quickcash.model;
 
-
+/*
+GENERAL IMPORTS
+ */
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -17,9 +19,15 @@ public class Sale {
     String personnelName;
     String personnelId;
 
+    /*
+    Default Constructor
+     */
     public Sale() {
     }
 
+    /*
+    constructor to create and initialize Sale Object
+     */
     public Sale(String saleId, Date dateSold, double totCost, double totalDiscount, String personnelName, String personnelId) {
         this.saleId = saleId;
         this.timeSold = dateSold.getTime();
@@ -30,6 +38,9 @@ public class Sale {
     }
 
 
+    /*
+    Getters and Setters
+     */
 
     public String getSaleId() {
         return saleId;
@@ -85,6 +96,9 @@ public class Sale {
         this.personnelId = personnelId;
     }
 
+    /*
+    @param method takes and string and converts to the long date format
+     */
     public static long convertDateToLong(String date){
         System.out.println("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy                         yyyyyyyyy " + date);
         if (date.matches("\\s*\\d+-\\d+-\\d+")) {

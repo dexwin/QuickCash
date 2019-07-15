@@ -19,16 +19,25 @@ public class KitchenProduct {
     String tableComment = "";
     public static HashMap<String,String> orderTableKitchenIdList = new HashMap();
 
-
+    /*
+    Default Constructor
+     */
     public KitchenProduct() {
     }
 
+    /*
+    Constructor to create and initialize KitchenProduct
+     */
     public KitchenProduct(String tableNumber, String waitressName, ArrayList<TableItem> tableItems, boolean complted) {
         this.tableNumber = tableNumber;
         this.waitressName = waitressName;
         this.tableItems = tableItems;
         this.complted = complted;
     }
+
+    /*
+    Setters and Getters
+     */
 
     public String getTableNumber() {
         return tableNumber;

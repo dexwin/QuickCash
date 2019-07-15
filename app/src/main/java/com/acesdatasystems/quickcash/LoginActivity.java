@@ -1,5 +1,8 @@
 package com.acesdatasystems.quickcash;
 
+/*
+GENERAL IMPORTS
+ */
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;

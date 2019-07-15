@@ -5,6 +5,10 @@ package com.acesdatasystems.quickcash.model;
  */
 
 public class TotProduct {
+
+    /*
+    variable declaration and initialization
+     */
     String name ="";
     double price = 0;
     int totLeft = 0;
@@ -12,9 +16,16 @@ public class TotProduct {
     int totsPerBottle =0;
 
 
+    /*
+    Default Constructor
+     */
+
     public TotProduct() {
     }
 
+    /*
+    constructor to instantiate and initialize TotProduct Object
+     */
     public TotProduct(String name, double price, int totsLeft, String productId, int totsPerBottle) {
         this.name = name;
         this.price = price;
@@ -22,6 +33,10 @@ public class TotProduct {
         this.productId = productId;
         this.totsPerBottle = totsPerBottle;
     }
+
+    /*
+    Setters and Getters
+     */
 
     public String getName() {
         return name;

@@ -1,8 +1,15 @@
 package com.acesdatasystems.quickcash.datasource;
 
+/*
+GENERAL IMPORTS
+ */
 import android.support.annotation.NonNull;
 
 import java.util.ArrayList;
+
+/*
+Constructor to initialize TableItem
+ */
 
 public class TableItem implements Comparable<TableItem>{
 
@@ -20,12 +27,17 @@ public class TableItem implements Comparable<TableItem>{
     private boolean isCompleted =false;
     public TableItem(){}
 
+    /*
+    Overloaded Constructor
+     */
     public TableItem(String productName, double price,Boolean isTotSales) {
         this.productName = productName;
         this.price = price;
         this.isTotSales =isTotSales;
     }
-
+    /*
+    Setters and Getters
+     */
     public String getProductName() {
         return productName;
     }

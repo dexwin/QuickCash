@@ -2,6 +2,7 @@ package com.acesdatasystems.quickcash.model;
 
 /**
  * Created by Sheriff on 11/11/2018.
+ * Class is instantiated with class default constructor
  */
 
 public class AccountDetail {
@@ -13,6 +14,10 @@ public class AccountDetail {
     private String owner;
     private String registrationDate;
     private String token;
+
+    /*
+    Setters and Getters
+     */
 
     public String getBusinessName() {
         return businessName;

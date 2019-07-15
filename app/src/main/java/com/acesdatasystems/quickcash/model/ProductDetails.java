@@ -21,6 +21,10 @@ import java.util.List;
  */
 
 public class ProductDetails implements Comparable<ProductDetails>{
+
+    /*
+    Variables Initialization
+     */
     String cattegory = "";
     String name ="";
     double cost =0;
@@ -31,9 +35,15 @@ public class ProductDetails implements Comparable<ProductDetails>{
     String productType = "";
 
 
+    /*
+    Default Constructor
+     */
     public ProductDetails() {
     }
 
+    /*
+    constructor to create and initialize ProductDetails object
+     */
     public ProductDetails(String cattegory, String name, double cost, double price, String productId,int availableQuantity, boolean hasTot) {
         this.cattegory = cattegory;
         this.name = name;
@@ -46,6 +56,9 @@ public class ProductDetails implements Comparable<ProductDetails>{
 
     }
 
+    /*
+    Setters and Getters
+     */
     public String getCattegory() {
         return cattegory;
     }
@@ -110,6 +123,9 @@ public class ProductDetails implements Comparable<ProductDetails>{
         this.hasTot = hasTot;
     }
 
+    /*
+    @param this method creates an upload product to firebase database
+     */
     public static void uploadProduct(ProductDetails productDetails, final TotProduct totProduct){
        final String key = LoginActivity.accountsRef.child("products").child(productDetails.getCattegory()).push().getKey();
        productDetails.setProductId(key);

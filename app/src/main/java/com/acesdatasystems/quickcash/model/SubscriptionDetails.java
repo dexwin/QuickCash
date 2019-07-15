@@ -1,5 +1,8 @@
 package com.acesdatasystems.quickcash.model;
 
+/*
+   GENERAL IMPORTS
+ */
 import java.util.Date;
 
 /**

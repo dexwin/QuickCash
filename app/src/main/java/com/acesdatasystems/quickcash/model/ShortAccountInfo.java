@@ -1,5 +1,8 @@
 package com.acesdatasystems.quickcash.model;
 
+/*
+GENERAL IMPORTS
+ */
 import com.acesdatasystems.quickcash.LoginActivity;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -15,6 +18,10 @@ import java.util.List;
  */
 
 public class ShortAccountInfo {
+
+    /*
+    variable declarations
+     */
     String name;
     String userId;
     String accountType;
@@ -22,9 +29,15 @@ public class ShortAccountInfo {
     String status;
     String reg_token;
 
+    /*
+    Default Constructor
+     */
     public ShortAccountInfo() {
     }
 
+    /*
+    Constructor to instantiate and initialize ShortAccountInfo object
+     */
     public ShortAccountInfo(String name, String userId, String aacountType, boolean online, String statis) {
         this.name = name;
         this.userId = userId;
@@ -33,6 +46,9 @@ public class ShortAccountInfo {
         this.status = statis;
     }
 
+    /*
+    Setters and Getters
+     */
     public String getName() {
         return name;
     }

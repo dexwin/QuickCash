@@ -9,15 +9,24 @@ public class Notification {
     private String tag;
     private String token;
 
+    /*
+    Default Constructor
+     */
     public Notification() {
     }
 
+    /*
+    Constructor to create and initialize Notification Object
+     */
     public Notification(String message, String tag, String token) {
         this.message = message;
         this.tag = tag;
         this.token = token;
     }
 
+    /*
+    Setters and Getters
+     */
     public String getMessage() {
         return message;
     }

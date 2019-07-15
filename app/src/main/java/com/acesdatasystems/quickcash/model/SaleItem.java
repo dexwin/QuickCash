@@ -5,6 +5,10 @@ package com.acesdatasystems.quickcash.model;
  */
 
 public class SaleItem {
+
+    /*
+    Variable Declarations
+     */
     String saleId;
     String productId;
     String itemName;
@@ -15,8 +19,16 @@ public class SaleItem {
     long timeSold;
     double cost;
 
+    /*
+    Default Constructor
+     */
+
     public SaleItem() {
     }
+
+    /*
+    Constructor to create and initialize SaleItem object
+     */
 
     public SaleItem(String saleId, String productId, String itemName, boolean isTotProduct, int quantitySold, int availableQuantity, double totalDiscount, double cost) {
         this.saleId = saleId;
@@ -30,6 +42,10 @@ public class SaleItem {
         this.cost = cost;
 
     }
+
+    /*
+    Setters and Getters
+     */
 
     public String getSaleId() {
         return saleId;
